@@ -17,12 +17,14 @@ precioSpan.innerHTML = precio;
 // precio total
 let precioTotal = document.querySelector(".valor-total");
 
+//funcion para el boton suma
 function adicionar() {
     calculo = calculo + 1;
     unidad.innerText = calculo;
     precioTotal.innerText = calculo * precio;
 }
 
+//funcion para el boton resta
 function sustraer() {
     if (calculo > 0) {
     calculo = calculo - 1;
